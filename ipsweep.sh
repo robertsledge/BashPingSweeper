@@ -12,7 +12,7 @@ echo "Syntax: ./ipsweep.sh 192.168.5"
 # which would be the 4th space, helping to extract the IP address.
 #
 # tr -d ":" drops the colon from the end of the IP. 
-# for loop keeps going until it hits IP limit, using $1 argument for the IP input, and using .$ip to go in sequence IP to IP.
+# for loop keeps going (using the ping command) until it hits IP limit, using $1 argument for the IP input, and using .$ip to go in sequence IP to IP.
 #
 # The ampersand allows mulltiple instances of the ping command to happen at once. 
 #
